@@ -15,7 +15,7 @@ A Colorado Board of Elections employee gave me the following tasks to complete t
 - Data Source: election_results.csv
 - Software: Python 3.7.6, Visual Studio Code, 1.68.1
 
-## Election-Audit Results
+## Election Audit Results
 The analysis of the election shows that:
 - There were 369,711 votes cast in the election.
 - The candidates receiving votes were:
@@ -29,6 +29,11 @@ The analysis of the election shows that:
 - The winner of the election was:
     Diana DeGette, who received 73.8% of the vote and 272,892 votes.
     
-## Election-Audit Summary
+## Election Audit Summary
+This script has value beyond this particular election audit because of its versatility. That versatility comes from the fact that this script is not just counting votes, but it also finds the information that it is counting votes for. In this situation it was able to determine the candidates who received votes and the counties that the votes were coming from. This ability allows the script to be used effectively for other elections with a few simple modifications.
 
+### Ballot Proposals, Ballot Initiatives, Veto Referendums
+One example where the script could easily be modified are these situations where citizens are voting yes/no on and whichever option wins the popular vote. I would simply replace the portion of the script that determines candidates receiving votes with options for yes and no. Then, I would adjust the rest of the script accordingly for yes and no options. Now, the script would be able to count the votes for each option, calculate each option's percentage of the votes, and do the same for the counties that those votes came from and generate a report of the results. 
 
+### Presidential Elections
+Using this script to determine Colorado's results for presidential elections would require little to no modifications. The script would be able to determine the candidates that received votes, calculate each candidate's percentage of the votes, and do the same for the counties that those votes came from and generate a report of the results. With the extent of the media coverage on the day of presidential elections, the speed of the script would be valuable for quick and accurate reporting to the press.
